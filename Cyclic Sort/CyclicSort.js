@@ -10,8 +10,6 @@ class CyclicSort {
     return arr;
   }
 }
-
-const cs = new CyclicSort();
 console.log(CyclicSort.cs([5, 1, 4, 6, 2, 3]));
 
 /* 
