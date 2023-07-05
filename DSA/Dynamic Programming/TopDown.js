@@ -10,14 +10,9 @@ function fact(n) {
 
 function memoizedFact(n = 5) {
   const lookup = {};
-  if (n in lookup) {
-    console.log("memoized factorial...");
-    return lookup[n];
-  }
+  if (n in lookup) return lookup[n];
   if (n === 0 || n === 1) return 1;
-  else {
-    lookup[n] = n * memoizedFact(n - 1);
-  }
+  lookup[n] = n * memoizedFact(n - 1);
   return lookup[n];
 }
 
