@@ -36,7 +36,7 @@ class Heap {
   }
 }
 
-export class MaxHeap extends Heap {
+class MaxHeap extends Heap {
   insert(value) {
     this.heap.push(value);
     this.#heapifyUp();
@@ -87,7 +87,7 @@ export class MaxHeap extends Heap {
   }
 }
 
-export class MinHeap extends Heap {
+class MinHeap extends Heap {
   insert(value) {
     this.heap.push(value);
     this.#heapifyUp();
